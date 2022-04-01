@@ -12,11 +12,11 @@
 
 .ant-menu-horizontal > .ant-menu-item-selected a,
 .ant-menu-horizontal > .ant-menu-item a:hover {
-  color: #e32e4d;
+  color: rgb(255, 255, 3);
 }
 
-.ant-menu-horizontal > .ant-menu-item a {
-  color: #ff5757;
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: rgba(202, 202, 61, 0.918);
 }
 
 .ant-modal-content {
@@ -25,7 +25,7 @@
 }
 
 .ant-layout {
-  background-image: url("../public/2.png");
+  background-image: url("../public/layout1.png");
   background-size: cover;
 }
 

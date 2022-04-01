@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+
 import { useMoralis, useNFTBalances } from "react-moralis";
 import { Card, Image, Tooltip, Modal, Input, Skeleton } from "antd";
 import {
@@ -34,6 +36,12 @@ function NFTBalance() {
   const [nftToSend, setNftToSend] = useState(null);
   const [isPending, setIsPending] = useState(false);
   const { verifyMetadata } = useVerifyMetadata();
+
+  const history = useHistory();
+
+  const handleRoute = () => {
+    history.push("https://nft.detrix.io");
+  };
 
   async function transfer(nft, amount, receiver) {
     console.log(nft, amount, receiver);
@@ -98,9 +106,9 @@ function NFTBalance() {
                     <Tooltip title="Transfer NFT">
                       <SendOutlined onClick={() => handleTransferClick(nft)} />
                     </Tooltip>,
-                    <Tooltip title="Sell On OpenSea">
+                    <Tooltip title="Move to Firega Marketplace">
                       <ShoppingCartOutlined
-                        onClick={() => alert("OPENSEA INTEGRATION COMING!")}
+                        onClick={() => handleRoute("https://nft.detrix.io")}
                       />
                     </Tooltip>,
                   ]}

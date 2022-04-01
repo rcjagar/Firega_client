@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTokenPrice } from "react-moralis";
+// import { useTokenPrice } from "react-moralis";
 
 const styles = {
   token: {
@@ -13,31 +13,31 @@ const styles = {
     whiteSpace: "nowrap",
   },
 };
-function TokenPrice(props) {
-  const { data: formattedData } = useTokenPrice(props);
+function TokenPrice() {
+  // const { data: formattedData } = useTokenPrice(props);
 
   const [isUSDMode, setIsUSDMode] = useState(true);
 
   const toggleDisplayStyle = () => setIsUSDMode(!isUSDMode);
 
-  const noLogoToken = "https://etherscan.io/images/main/empty-token.png";
+  // const noLogoToken = "";
 
   return (
     <div style={styles.token}>
-      <img
+      {/* <img
         src={props.image || noLogoToken}
         alt="logo"
         style={{ height: props?.size || "35px" }}
-      />
+      /> */}
       <span
         style={{ cursor: "pointer" }}
         onClick={toggleDisplayStyle}
         title={`Show in ${isUSDMode ? "ETH" : "USD"}`}
       >
-        {formattedData &&
+        {/* {formattedData &&
           (isUSDMode
             ? formattedData.formattedUsd
-            : formattedData.formattedNative)}
+            : formattedData.formattedNative)} */}
       </span>
     </div>
   );

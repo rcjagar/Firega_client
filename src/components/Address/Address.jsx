@@ -43,7 +43,8 @@ function Address(props) {
       strokeLinecap="round"
       strokeLinejoin="round"
       style={{ cursor: "pointer" }}
-      onClick={() => {
+      NFT
+      Balances={() => {
         navigator.clipboard.writeText(address);
         setIsClicked(true);
       }}
