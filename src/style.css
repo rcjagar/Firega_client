@@ -1,0 +1,66 @@
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid rgba(43, 177, 141, 0) !important;
+  color: white;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected a,
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: #e32e4d;
+}
+
+.ant-menu-horizontal > .ant-menu-item a {
+  color: #ff5757;
+}
+
+.ant-modal-content {
+  overflow: auto;
+  border-radius: 1rem;
+}
+
+.ant-layout {
+  background-image: url("../public/2.png");
+  background-size: cover;
+}
+
+.ant-layout-header {
+  background: 0;
+}
+
+.ant-menu-horizontal {
+  color: white;
+  border-bottom: #020e0bf6;
+}
+.ant-menu-item {
+  color: white;
+}
+
+.ant-card {
+  background-color: #ffc0cb00;
+}
+
+.ant-table-content {
+  background-color: #ffc0cb00;
+}
+
+.ant-table > th {
+  background-color: #ffc0cb00;
+}
+
+.ant-table-tbody {
+  background-color: #422e2c;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-family: monospace;
+  color: #ff4d4f;
+}
+.ant-tabs {
+  color: #ff5757;
+}
